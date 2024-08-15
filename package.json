@@ -1,0 +1,28 @@
+{
+  "name": "test_app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "cryptocurrency exchange monitoring app",
+  "scripts": {
+    "start:local": "nodemon src/main.mjs --watch",
+    "start:dev": "node src/main.mjs",
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/swagger": "^8.15.0",
+    "@fastify/swagger-ui": "^4.1.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3",
+    "supertest": "^7.0.0"
+  }
+}
